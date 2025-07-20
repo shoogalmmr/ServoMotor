@@ -47,6 +47,13 @@ Connect the **signal wires** (usually orange) of each servo motor to the Arduino
 
 > Ensure the ground of the external power supply is connected to Arduino GND to avoid erratic behavior.
 
+## Programming Technologies Used
+
+- **Arduino IDE** — The official integrated development environment to write, compile, and upload code to Arduino boards  
+- **Arduino Servo Library (`Servo.h`)** — A built-in Arduino library to easily control servo motors by handling PWM signals  
+- **C++ (Arduino language)** — The programming language used for writing Arduino sketches  
+
+
 ## Wiring Diagram
 
 Below is the schematic for connecting six servo motors to the Arduino using a breadboard:
