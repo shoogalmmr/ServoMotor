@@ -4,16 +4,15 @@ This project demonstrates how to control **six servo motors** using an **Arduino
 
 ## Components Required
 
-| Component                      | Quantity |
-|-------------------------------|----------|
-| Arduino UNO                   | 1        |
-| Servo Motor (SG90 or similar) | 6        |
-| Breadboard                    | 1        |
-| Jumper Wires                  | As needed |
-| External Power Supply *(optional but recommended)* | 1 |
+| Component                  | Quantity |
+|----------------------------|----------|
+| Arduino UNO                | 1        |
+| Servo Motor (SG90 or similar) | 6    |
+| External Power Supply (recommended) | 1 |
+| Jumper Wires               | As needed |
+| Breadboard                 | 1        |
 
-> **Note:** If you're only testing with 1–2 servos briefly, powering them directly from the Arduino 5V pin may work.  
-> However, when using 3 or more servos, it’s **strongly recommended** to use an external 5V power supply to ensure stable performance and prevent voltage drops.
+> **Important:** Avoid powering all six servo motors directly from the Arduino 5V pin. Use an external power source to prevent voltage drops or potential damage.
 
 ## Circuit Setup
 
@@ -32,21 +31,25 @@ Connect the **signal wires** (usually orange) of each servo motor to the Arduino
 
 ### Power and Ground Connections
 
-- Connect all **VCC (red)** wires of the servo motors to the positive rail of the breadboard.
-  - You can connect this rail to the **Arduino 5V pin** if you're using **1–2 servos** only.
-  - For **3 or more servos**, it is **recommended** to use a separate 5V external power source.
+- Connect all **VCC (red)** wires of the servo motors to the positive rail of the breadboard. Then connect that rail to a 5V power source (external is preferred).
 - Connect all **GND (black or brown)** wires of the servo motors to the negative rail of the breadboard.
-- Connect the **Arduino GND** to the same negative rail to complete the common ground.
+- Connect the **GND of the Arduino** to the same negative rail to complete the common ground.
 
-> If using an external power supply, always connect its ground (GND) to the Arduino GND.
-
+> Ensure the ground of the external power supply is connected to Arduino GND to avoid erratic behavior.
 
 ## Wiring Diagram
 
 Below is the schematic for connecting six servo motors to the Arduino using a breadboard:
 
-![Servo Motor Wiring Diagram](https://github.com/user-attachments/assets/d7919b17-ebce-401b-af00-f8cbfb3d608e)
 
+![Servo Motor Wiring Diagram](https://github.com/user-attachments/assets/64151c4c-8088-42fd-a7a8-48bb884773f3)
+
+> Disclaimer About the Wiring Diagram Image
+The wiring diagram shown here is a hypothetical simulation setup intended for demonstration purposes.
+In this simulation, the servo motors are powered directly from the Arduino’s 5V pin without an external power supply.
+Important:
+In a real hardware setup, powering multiple servos directly from the Arduino is not recommended due to current limitations.
+An external power supply is required to ensure stable and safe operation.
 
 ## Arduino Code
 
@@ -93,3 +96,20 @@ void testServos() {
   delay(1000);
 }
 ```
+
+## Important Note About Power Supply
+In simulation environments, servo motors may work fine when powered directly from the Arduino’s 5V pin because the simulation does not account for real-world current and voltage limitations.
+
+However, in real-world applications:
+
+- It is essential to use an external power supply capable of providing sufficient current to all servo motors, especially when running multiple servos simultaneously.
+
+- Failing to provide a separate and stable power source can lead to:
+
+- Voltage drops,
+
+- Unexpected resets of the Arduino,
+
+- Potential damage to the Arduino or servos.
+
+Therefore, always ensure to use an appropriate external power supply when implementing this project on actual hardware.
