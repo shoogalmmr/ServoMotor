@@ -1,7 +1,16 @@
 # Control 6 Servo Motors with Arduino UNO
 
-### This project demonstrates how to control **six servo motors** using an **Arduino UNO** and a **breadboard**, with detailed wiring instructions and test code.
----
+This project demonstrates how to control **six servo motors** using an **Arduino UNO** and a **breadboard**, with detailed wiring instructions and test code.
+
+## Table of Contents
+[Components Required](https://github.com/shoogalmmr/ServoMotor?tab=readme-ov-file#components-required)
+
+[Circuit Setup](https://github.com/shoogalmmr/ServoMotor?tab=readme-ov-file#circuit-setup)
+
+[Wiring Diagram](https://github.com/shoogalmmr/ServoMotor?tab=readme-ov-file#wiring-diagram)
+
+[Arduino Code](https://github.com/shoogalmmr/ServoMotor?tab=readme-ov-file#arduino-code)
+
 
 ## Components Required
 
