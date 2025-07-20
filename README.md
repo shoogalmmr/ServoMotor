@@ -1,6 +1,7 @@
 # Control 6 Servo Motors with Arduino UNO
 
-This project demonstrates how to control **six servo motors** using an **Arduino UNO** and a **breadboard**, with detailed wiring instructions and test code.
+### This project demonstrates how to control **six servo motors** using an **Arduino UNO** and a **breadboard**, with detailed wiring instructions and test code.
+---
 
 ## Components Required
 
@@ -44,7 +45,7 @@ Below is the schematic for connecting six servo motors to the Arduino using a br
 
 ![Servo Motor Wiring Diagram](https://github.com/user-attachments/assets/64151c4c-8088-42fd-a7a8-48bb884773f3)
 
-> Disclaimer About the Wiring Diagram Image
+> Disclaimer About the Wiring Diagram Image :
 The wiring diagram shown here is a hypothetical simulation setup intended for demonstration purposes.
 In this simulation, the servo motors are powered directly from the Arduino’s 5V pin without an external power supply.
 Important:
