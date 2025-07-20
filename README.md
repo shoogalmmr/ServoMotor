@@ -7,6 +7,8 @@ This project demonstrates how to control **six servo motors** using an **Arduino
 
 [Circuit Setup](https://github.com/shoogalmmr/ServoMotor?tab=readme-ov-file#circuit-setup)
 
+[Programming technologies used](https://github.com/shoogalmmr/ServoMotor#programming-technologies-used)
+
 [Wiring Diagram](https://github.com/shoogalmmr/ServoMotor?tab=readme-ov-file#wiring-diagram)
 
 [Arduino Code](https://github.com/shoogalmmr/ServoMotor?tab=readme-ov-file#arduino-code)
